@@ -1,4 +1,4 @@
-![test](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/unnamed.png?raw=true)
+![banner](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/banner.png?raw=true)
 
 ## 역할
 
