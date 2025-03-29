@@ -1,6 +1,19 @@
 ![banner](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/banner.png?raw=true)
 
-## 역할
+# 🚲 Bikecast: 서울시 공공자전거 수요 분석 및 예측
+
+> 서비스 설명
+
+
+---
+
+## 📌 프로젝트 개요
+
+프로젝트 개요
+
+---
+
+## 👨‍💻 역할
 
 | 구분 | 이름 | 역할 |
 |------|------|------|
