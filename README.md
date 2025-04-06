@@ -94,7 +94,7 @@
 | 풍속                   | 자전거 인프라(자전거 도로)    |
 | 일사량                 | 여가 인프라(공원)             |
 
-> **위와 같은 요소들이 대여량 변화에 영향을 줄 것이다!**
+> **위와 같은 요소들이 대여량 변화에 영향을 줄 것이다**
 
 
 ---
@@ -116,9 +116,7 @@
 
 #### ✅ 결론
 - 출근 시간(7-9시), 퇴근 시간(17-19시)에 수요 급등  
-- 금요일 > 수요일 > 월요일 순으로 활발  
-- 계절적으로는 3-5월, 9-10월에 집중  
-
+- ...
 → **SR_01 기능의 주요 feature로 채택**
 
 ---
@@ -144,7 +142,7 @@
 
 ## 📍 가설 그룹 B. 공간 및 위치 특성
 
-공공자전거의 수요는 대여소의 공간적 입지 조건에 따라 크게 달라질 수 있다는 가정 하에, 다양한 입지 요인별로 개별 가설을 설정하여 검증을 진행하였습니다.
+공공자전거의 수요는 **대여소의 공간적 입지 조건**에 따라 크게 달라질 수 있다는 가정 하에, 다양한 입지 요인별로 개별 가설을 설정하여 검증을 진행하였습니다.
 
 ---
 
@@ -197,24 +195,23 @@
 ### 🧪 가설 B-3. 생활인구가 많을수록 자전거 수요도 많다
 
 #### 📌 분석 내용
-- 행정동 단위 유동 인구 데이터와 대여소 수요 매핑
+- 자치구 단위 생활인구 데이터와 대여소 수요 매핑
 - 
 #### 📊 시각화
-![유동 인구 vs 대여량](https://github.com/.../img/eda-floatingpop.png?raw=true)
+![유동 인구 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-17.png?raw=true)
 
 #### ✅ 결론
-- 유동 인구와 대여량 간 양의 상관관계 존재  
-- **인구 밀도/유동 인구를 주요 입지 특성 변수로 활용**
+- 생활 인구와 대여량 간 양의 상관관계 존재  
 
 ---
 
 ### 🧪 가설 B-4. 공원이 가까울수록 수요가 많다
 
 #### 📌 분석 내용
-- 자치구내 공원수 추출
+- ...
 
 #### 📊 시각화
-![공원수 vs 대여량](https://github.com/.../img/eda-poi.png?raw=true)
+![공원수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-22.png?raw=true)
 
 #### ✅ 결론
 - ...
@@ -226,19 +223,26 @@
 - ...
 
 #### 📊 시각화
-![상업시설 수 vs 대여량](https://github.com/.../img/eda-poi.png?raw=true)
+![자치구별 사업체 종사자 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-18.png?raw=true)
+![행정동별 사업체 종사자 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-19.png?raw=true)
+![자치구별 사업체 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-20.png?raw=true)
+![행정동별 사업체 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-21.png?raw=true)
 
 #### ✅ 결론
 - ...
 
-## 🧩 공간 요인 정리
+---
 
-| 가설 | 공간 변수 | 인사이트 | 모델 활용 |
-|------|-----------|----------|-------------|
-| B-1 | 고도 | 고도↑ → 수요↓ | SR_02 Feature |
-| B-2 | 지하철 거리 | 가까울수록 수요↑ | SR_02 Feature |
-| B-3 | 유동 인구 | 유동 인구↑ → 수요↑ | SR_02 Feature |
-| B-4 | POI 개수 | 시설 밀도↑ → 수요↑ | SR_02 Feature |
+### 🧪 가설 B-6. 자전거도로가 많을수록 수요가 많다.
+
+#### 📌 분석 내용
+- ...
+
+#### 📊 시각화
+![자치구별 자전거도로 노선 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-23.png?raw=true)
+
+#### ✅ 결론
+- ...
 
 ---
 
