@@ -28,8 +28,17 @@
 
 ## 2. 기술 스택
 
-**(추가 예정)**  
-- Python, MySQL, Pandas, XGBoost, PyQt5, Folium 등
+| 분류 | 기술 | 배지 |
+|------|------|------|
+| **언어** | Python | ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **데이터 분석** | Pandas<br>Matplotlib<br>Seaborn | ![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)<br>![Matplotlib](https://img.shields.io/badge/matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)<br>![Seaborn](https://img.shields.io/badge/seaborn-4B8BBE?style=for-the-badge&logo=python&logoColor=white) |
+| **모델링** | XGBoost<br>scikit-learn | ![XGBoost](https://img.shields.io/badge/xgboost-FF6600?style=for-the-badge&logo=apache&logoColor=white)<br>![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) |
+| **DB** | MySQL | ![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white) |
+| **시각화** | Folium | ![Folium](https://img.shields.io/badge/folium-77B829?style=for-the-badge&logo=leaflet&logoColor=white) |
+| **UI** | PyQt5 | ![PyQt5](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white) |
+| **형상 관리** | Git / GitHub | ![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white) |
+
+
 
 ---
 
@@ -308,7 +317,7 @@
 
 - 위치 기반 변수만을 활용했음에도 R²가 0.76으로, 공간적 수요 분포를 파악하는 데 충분한 설명력을 보임  
 - 절대적 예측 정확도보다는 후보지 간 **상대적 수요 비교**에 유용하며, 입지 전략 수립 시 **실제 의사결정에 도움이 될 수 있음**  
-- 다만, 고수요 대여소(일수요 > 100)에 대해서는 성능 개선이 필요하며, 그 구조적 한계에 대해서는 [9. 고찰 및 한계](#9-고찰-및-한계)에서 다루었습니다.
+- 다만, 고수요 대여소(일수요 > 100)에 대해서는 성능 개선이 필요하며, 그 구조적 한계에 대해서는 [9. 한계점](#9-한계점)에서 다루었습니다.
 
 
 ---
