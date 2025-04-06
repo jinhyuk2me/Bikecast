@@ -229,6 +229,7 @@ EDA와 XGBoost는 상호 보완적인 관계에 있습니다. **EDA에서 중요
 ![서울시 자치구별 평균 고도](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-11.png?raw=true)
 ![자치구별 평균 고도 vs 따릉이 대여 수](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-12.png?raw=true)
 ![대여소별 고도에 따른 평균대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-13.png?raw=true)
+각 대여소 위치의 고도는 그 대여소의 이용량과 반비례적인 연관성을 보였습니다. 대여소가 높은 고도에 위치할수록 사용자들의 자전거 대여량이 낮은 것을 알 수 있습니다. 이를통해, 사용자들은 높낮이가 적은 대체로 평평한 지형에서 자전거를 사용하는것을 선호하는 것을 알 수 있습니다. 확실히, 경사도가 어느정도 있는 지역의 시민들은 자전거 이용을 꺼려하는듯 보입니다.
 
 #### ✅ 결론
 - 평균 고도가 높을수록 대여량이 감소하는 경향 명확  
