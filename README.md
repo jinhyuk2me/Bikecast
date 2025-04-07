@@ -274,7 +274,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 ### 🧪 가설 B-4. "생활인구가 많을수록 자전거 수요도 많다"
 
 #### 📌 분석 내용
-- 행정동별 생활인구와 대여소 수요 매핑
+- 자치구별 생활인구와 대여소 수요 매핑
 
 #### 📊 시각화  
 ![생활인구](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-17.png?raw=true)
