@@ -263,7 +263,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 - 대여소별 최근접 지하철/버스의 승하차량과 수요 비교
 
 #### 📊 시각화  
-<!-- 이미지 추가 예정 -->
+![교통 이용량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-24.png?raw=true)
 
 #### ✅ 결론
 - 대중교통 이용량↑ → 수요↑  
