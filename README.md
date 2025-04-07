@@ -189,7 +189,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 - 출퇴근 시간, 금요일, 봄/가을에 수요 집중
 
 #### 📊 시각화  
-![시간대](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/5-2.png?raw=true)  
+![시간대](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/5-2.png?raw=true)
 ![주중vs주말](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-3.png?raw=true)  
 ![평일vs휴일](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-4.png?raw=true)  
 ![요일별](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-5.png?raw=true)  
