@@ -180,174 +180,153 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 ### ⏱️ 가설 그룹 A. 시간 및 환경 특성
 
-### 🧪 가설 A-1. "자전거 이용량은 시간대의 영향을 많이 받을것이다"
+---
+
+### 🧪 가설 A-1. "자전거 이용량은 시간대의 영향을 많이 받을 것이다"
 
 #### 📌 분석 내용
-- 시간대/요일/월별로 수요를 집계
+- 시간대, 요일, 월별 수요 집계
 - 출퇴근 시간, 금요일, 봄/가을에 수요 집중
 
-#### 📊 시각화
+#### 📊 시각화  
 ![시간대](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/5-2.png?raw=true)  
-평일 시간대에 따른 대여량을 보았을때, 두가지 패턴이 극명하게 드러납니다. 출근시간 (7-9시)와 퇴근시간(17-19시) 그 두 지점에서 사용률이 최대치에 도달하며 그 사이에는 다시 사용률이 급락합니다. 이를 통해 알 수 있는것은 대부분의 이용자들은 공공자전거를 출퇴근, 등하교의 교통 목적으로 사용하고 있다는 것입니다.
-
-![주중vs주말](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-3.png?raw=true)
-주중과 주말은 그 패턴에서 확연한 차이를 보입니다. 출퇴근 시점 위주로 사용량이 증가하는 평일과는 다르게 주말은 저녁 5시를 기준으로 대여량이 증가하고 감소합니다. 아침 5시부터 저녁 5시까지 12시간동안 점진적으로 증가세를 보이다가, 저녁 5시가 지나면 평일과 동일한 양세를 띄웁니다. 이로서, 주말 이용자는 대체로 낮동안 여가활동을 위해 사용하다가 저녁에는 활동을 종료한다는 추정을 할 수 있습니다.
-
-![평일vs휴일](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-4.png?raw=true)
-전체 사용량을 볼때, 평일이 주말보다 사용량이 대체로 20% 가량 높은편입니다. 이는 앞서 시간대별 대여량을 통해 추측했던 "사용자들은 대부분 출퇴근 교통을 목적으로 자전거를 이용한다" 라는 주장에 무게를 더 싣습니다.
-
-![요일별](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-5.png?raw=true)
-평일중 금요일이 가장 사용량이 높은것을 알 수 있습니다. 이는 추측컨데, 평일 이용자의 교통목적과 주말이용자의 여가활동 목적이 결합된 구간이 금요일이기 때문이지 않나 싶습니다. 주말엔 일요일보다 토요일이 비교적 더 활발한 사용량을 보입니다.
-
+![주중vs주말](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-3.png?raw=true)  
+![평일vs휴일](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-4.png?raw=true)  
+![요일별](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-5.png?raw=true)  
 ![계절별](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-6.png?raw=true)
-계절별 사용량또한 일정한 패턴양상을 보입니다. 여름과 겨울 사용빈도는 낮은데에 비해 봄과 가을의 사용빈도는 높습니다. 이를 통해 알 수 있는 것은, 자전거 이용자들은 자전거를 이용하기 좋은 선선한 날씨를 선호하며, 너무 덥거나 추운 날씨에는 사용을 하지 않는다는 것입니다.
 
 #### ✅ 결론
-가설과 동일하게, 예상한대로 시간은 공공자전거 이용량에 지대한 영향을 미치는 요소였습니다. 핵심 결론은 다음과 같습니다:
-- 출근 시간(7-9시), 퇴근 시간(17-19시)에 수요 급등  
-- 평일과 주말의 이용 패턴은 극명하게 다르다
-  - 평일 - 출퇴근 시간만 수요 급등
-  - 주말 - 오전부터 저녁 5시까지 지속적으로 상승하나, 저녁5시 이후로 빠르게 감소
-- 평일이 주말보다 20% 가량이용량이 높은것으로 보아, 출퇴근 교통 목적으로 주로 이용된다
-- 평일엔 금요일이 가장 높은 이용량을 보이며, 주말은 토요일이 일요일보다는 조금 더 활발하다
-- 4계절중, 봄 가을날 이용량이 높고 겨울 여름 이용량이 낮은 패턴이 극명하게 드러난다
-
-→ **그러므로, SR_01 기능의 주요 feature로 채택**
+- 출근(7-9시), 퇴근(17-19시) 시간대에 수요 급등  
+- 평일 > 주말, 금요일·토요일 집중  
+- 봄/가을 > 여름/겨울  
+→ **SR_01 기능의 주요 feature로 채택**
 
 ---
 
 ### 🧪 가설 A-2. "날씨 조건은 자전거 사용량에 크게 영향을 줄 것이다"
 
 #### 📌 분석 내용
-- 기온, 강수량, 일조량에 따른 수요 변화 확인
-- 날씨 API 예보 데이터를 연동하여 대응 가능성 검토
+- 기온, 강수량, 습도, 일사량별 수요 변화 분석
+- 날씨 API 연동 가능성 검토
 
-#### 📊 시각화
-![기온 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-7.png?raw=true)
-자전거 대여량은 기온과 비례하여 증가하는 모습을 보였습니다. 영하에서 22도까지는 점전직으로 증가하다가, 22도 이후부터는 또다시 감소하는 패턴을 보입니다. 이는, 너무 춥거나 덥지도 않은 22도를 자전거 사용자들이 가장 선호한다는 의미로 해석됩니다.
- 
-![강수량 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-8.png?raw=true)
-10mm이내의 강수량 범위 내에서 가장 극적인 변화를 보여주고 있습니다. 이는, 사용자가 조금이라도 비가 내릴것이 예상되면 자전거 대여를 아예 꺼려한다고 해석할 수 있겠습니다. 반면, 10mm 이후부터는 어느정도 대여량이 유지가 되는 편인데, 이는 비에 어느정도 대비한 사용자들이 비를 뚫고 자전거를 이용하는편임을 나타내는것으로 해석하고 있습니다.
- 
-![습도 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-9.png?raw=true)
-습도는 0%에서 80%가량 까지는 크게 사용률에 영향을 미치지 않습니다. 80% 이상부터는 극적으로 사용량이 줄어드는데, 이는 아마도 습도가 올라감은 곧 높은 강수확률을 의미하여 그런것으로 추정하고 있습니다. 혹은, 높은 습도로 불쾌지수가 증가한것도 잠재적 원인으로 파악됩니다.
-
-![일사량 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-10.png?raw=true)
-일사량은 쉽게 말하여 그 날의 맑기의 정도를 뜻합니다. 날이 맑을 수록 자전거 이용량은 더욱 높았고, 그 변화의 정도는 상당히 직선적으로 나타났으므로, "날이 맑으면 맑을 수록 자전거 이용률이 높다"라고 해도 과언은 아닌듯 합니다.
+#### 📊 시각화  
+![기온](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-7.png?raw=true)  
+![강수량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-8.png?raw=true)  
+![습도](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-9.png?raw=true)  
+![일사량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-10.png?raw=true)
 
 #### ✅ 결론
-주요 인사이트는 다음과 같습니다:
-- 최적 기온은 약 22도 전후
-- 강수량이 존재하면 수요 급감
-- 날이 맑을수록 수요가 비례적으로 증가  
-- 날씨는 **단기 수요 예측(SR_01)** 에서 반드시 고려해야 할 요소
+- 기온 22도 전후에서 최적 수요  
+- 강수량 발생 시 수요 급감  
+- 일사량↑ → 수요↑ / 습도 80%↑ → 수요↓  
+→ **SR_01 기능의 주요 feature로 채택**
 
 ---
 
-## 📍 가설 그룹 B. 공간 및 위치 특성
-
-공공자전거의 수요는 **대여소의 공간적 입지 조건**에 따라 크게 달라질 수 있다는 가정 하에, 다양한 입지 요인별로 개별 가설을 설정하여 검증을 진행하였습니다.
+### 📍 가설 그룹 B. 공간 및 위치 특성
 
 ---
 
-### 🧪 가설 B-1. 고도가 높을수록 자전거 수요는 낮아진다
+### 🧪 가설 B-1. "고도가 높을수록 자전거 수요는 낮아진다"
 
 #### 📌 분석 내용
-- 대여소 위치의 고도 정보와 수요 비교
-- 고도별 구간 나눠 그룹 평균 분석
+- 대여소별 고도와 평균 대여량 비교
 
-#### 📊 시각화
-![서울시 자치구별 평균 고도](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-11.png?raw=true)
-![자치구별 평균 고도 vs 따릉이 대여 수](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-12.png?raw=true)
-![대여소별 고도에 따른 평균대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-13.png?raw=true)
-각 대여소 위치의 고도는 그 대여소의 이용량과 반비례적인 연관성을 보였습니다. 대여소가 높은 고도에 위치할수록 사용자들의 자전거 대여량이 낮은 것을 알 수 있습니다. 이를통해, 사용자들은 높낮이가 적은 대체로 평평한 지형에서 자전거를 사용하는것을 선호하는 것을 알 수 있습니다. 확실히, 경사도가 어느정도 있는 지역의 시민들은 자전거 이용을 꺼려하는듯 보입니다.
+#### 📊 시각화  
+![고도1](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-11.png?raw=true)  
+![고도2](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-12.png?raw=true)  
+![고도3](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-13.png?raw=true)
 
 #### ✅ 결론
-- 평균 고도가 높을수록 대여량이 감소하는 경향 명확  
-- 고도는 **SR_02 설치 위치 추천 모델의 핵심 feature** 중 하나
+- 고도↑ → 수요↓  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-2. 지하철역/버스정류장과 가까울수록 수요가 높다
+### 🧪 가설 B-2. "지하철역/버스정류장과 가까울수록 수요가 높다"
 
 #### 📌 분석 내용
-- 각 대여소와 가장 가까운 지하철역/버스정류장 거리 계산
-- 거리 단위 구간별 수요 비교
+- 대여소 ↔ 최근접 대중교통 거리 측정 및 그룹 분석
 
-#### 📊 시각화
-![지하철/버스정류장 거리 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-15.png?raw=true)
+#### 📊 시각화  
+![교통 거리](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-15.png?raw=true)
 
 #### ✅ 결론
-- 최근접 지하철역/버스정류장까지의 거리 feature 생성 → **SR_02에 포함**
+- 거리↑ → 수요↓  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-3. 가까운 지하철역/버스정류장의 이용량이 높을수록 수요가 높다
+### 🧪 가설 B-3. "가까운 대중교통의 이용량이 높을수록 수요가 높다"
 
 #### 📌 분석 내용
-- 각 대여소와 가장 가까운 지하철역/버스정류장의 이용량을 계산
+- 대여소별 최근접 지하철/버스의 승하차량과 수요 비교
 
-#### 📊 시각화
-![지하철/버스정류장 이용량 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-16.png?raw=true)
+#### 📊 시각화  
+<!-- 이미지 추가 예정 -->
 
 #### ✅ 결론
-- 최근접 지하철역/버스정류장의 이용량 feature 생성 → **SR_02에 포함**
+- 대중교통 이용량↑ → 수요↑  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-3. 생활인구가 많을수록 자전거 수요도 많다
+### 🧪 가설 B-4. "생활인구가 많을수록 자전거 수요도 많다"
 
 #### 📌 분석 내용
-- 행정동 단위 생활인구 데이터와 대여소 수요 매핑
-  
-#### 📊 시각화
-![유동 인구 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-17.png?raw=true)
+- 행정동별 생활인구와 대여소 수요 매핑
+
+#### 📊 시각화  
+![생활인구](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-17.png?raw=true)
 
 #### ✅ 결론
-- 생활 인구와 대여량 간 양의 상관관계 존재 → **SR_02에 포함**
+- 생활인구↑ → 수요↑  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-4. 공원이 가까울수록 수요가 많다
+### 🧪 가설 B-5. "공원이 가까울수록 수요가 많다"
 
 #### 📌 분석 내용
-- 자치구 단위 공원 수 데이터와 대여소 수요 매핑
+- 자치구별 공원 수와 대여량 비교
 
-#### 📊 시각화
-![공원수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-22.png?raw=true)
+#### 📊 시각화  
+![공원수](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-22.png?raw=true)
 
 #### ✅ 결론
-- 자치구별 공원 수와 대여량 간 양의 상관관계 존재 → **SR_02에 포함**
+- 공원 수↑ → 수요↑  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-5. 산업 및 고용 환경은 수요를 크게 변화시킨다.
+### 🧪 가설 B-6. "산업 및 고용 환경은 수요를 변화시킨다"
 
 #### 📌 분석 내용
-- ...
+- 사업체 수, 종사자 수 vs 대여량 (자치구/행정동 단위 분석)
 
-#### 📊 시각화
-![자치구별 사업체 종사자 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-18.png?raw=true)
-![행정동별 사업체 종사자 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-19.png?raw=true)
-![자치구별 사업체 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-20.png?raw=true)
-![행정동별 사업체 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-21.png?raw=true)
+#### 📊 시각화  
+![산업1](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-18.png?raw=true)  
+![산업2](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-19.png?raw=true)  
+![산업3](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-20.png?raw=true)  
+![산업4](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-21.png?raw=true)
 
 #### ✅ 결론
-- ...
+- 산업체 밀집 지역일수록 수요↑  
+→ **SR_02 feature로 채택**
 
 ---
 
-### 🧪 가설 B-6. 자전거도로가 많을수록 수요가 많다.
+### 🧪 가설 B-7. "자전거도로가 많을수록 수요가 많다"
 
 #### 📌 분석 내용
-- ...
+- 자치구별 자전거도로 노선 수와 대여량 비교
 
-#### 📊 시각화
-![자치구별 자전거도로 노선 수 vs 대여량](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-23.png?raw=true)
+#### 📊 시각화  
+![자전거도로](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/6-23.png?raw=true)
 
 #### ✅ 결론
-- ...
-
+- 자전거도로↑ → 수요↑  
+→ **SR_02 feature로 채택**
 
 ---
 
