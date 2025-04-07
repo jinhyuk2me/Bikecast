@@ -506,35 +506,84 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 ## 11. 팀 소개
 
-## 👨‍💼 팀장
+<h3>👨‍💼 팀장</h3>
 
-### **장진혁** [![GitHub](https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jinhyuk2me)
-- 프로젝트 기획 및 총괄
-- 데이터베이스 설계, 구축 및 관리
-- 실시간 대여량 예측 시스템 설계 및 구현  
-  - 시간 특성 기반 예측 모델 및 사용자 기능 개발
-- 신규 대여소 설치 위치 추천 시스템 설계 및 구현  
-  - 공간 특성 기반 예측 모델 및 위치 추천 알고리즘 개발
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>GitHub</th>
+      <th>역할</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>장진혁</strong></td>
+      <td>
+        <a href="https://github.com/jinhyuk2me">
+          <img src="https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        프로젝트 기획 및 총괄<br>
+        DB 설계, 구축, 관리<br>
+        실시간 수요 예측 시스템 개발 (SR_01)<br>
+        설치 위치 추천 시스템 개발 (SR_02)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
+<h3>👥 팀원</h3>
 
-## 👥 팀원
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>GitHub</th>
+      <th>역할</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>김대인</strong></td>
+      <td>
+        <a href="https://github.com/Daeinism">
+          <img src="https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        날씨 데이터 수집·분석·시각화<br>
+        DB 시각화, 관리 보완<br>
+        백엔드 기능 개발: SQL, 고도/거리 계산, API 연동
+      </td>
+    </tr>
+    <tr>
+      <td><strong>김민수</strong></td>
+      <td>
+        <a href="https://github.com/kimminsu0519">
+          <img src="https://img.shields.io/badge/github-kimminsu0519-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        대중교통 접근성 지표 설계<br>
+        교통 이용량 분석 및 상관관계 검증<br>
+        문서 통일, 코드 정리, 배포 전 검토
+      </td>
+    </tr>
+    <tr>
+      <td><strong>김범진</strong></td>
+      <td>
+        <a href="https://github.com/jbjj0708">
+          <img src="https://img.shields.io/badge/github-jbjj0708-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        분석 가설 수립<br>
+        공공데이터 수집 및 정제<br>
+        데이터 분석 및 시각화
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-### **김대인** [![GitHub](https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Daeinism)
-- 날씨 관련 데이터 수집, 전처리, 분석, 시각화
-- 데이터베이스 시각화, 보완 및 관리
-- 시스템/기능 백엔드 개발  
-  - SQL 명령 작성  
-  - 좌표 계산  
-  - 고도/거리 측정  
-  - 날씨/고도 API  
-  - 학습 데이터셋 구성
-
-### **김민수** [![GitHub](https://img.shields.io/badge/github-kimminsu0519-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kimminsu0519)
-- 위치 기반 대중교통 접근성 분석 지표 설계 및 구현
-- 지하철/버스/따릉이 이용량 데이터 병합 및 시간대별 상관관계 분석
-- 프로젝트 문서 통일 및 코드 정리, GitHub 배포 전 사전 점검
-
-### **김범진** [![GitHub](https://img.shields.io/badge/github-jbjj0708-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jbjj0708)
-- 다양한 분석 가설 수립
-- 공공데이터 수집 및 전처리
-- 데이터 분석 및 시각화
