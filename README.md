@@ -506,7 +506,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 ## 11. 팀 소개
 
-### 👨‍💼 팀장
+## 👨‍💼 팀장
 
 ### **장진혁** [![GitHub](https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jinhyuk2me)
 - 프로젝트 기획 및 총괄
@@ -516,9 +516,8 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 - 신규 대여소 설치 위치 추천 시스템 설계 및 구현  
   - 공간 특성 기반 예측 모델 및 위치 추천 알고리즘 개발
 
----
 
-### 👥 팀원
+## 👥 팀원
 
 ### **김대인** [![GitHub](https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Daeinism)
 - 날씨 관련 데이터 수집, 전처리, 분석, 시각화
