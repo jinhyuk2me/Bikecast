@@ -508,8 +508,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 ### 👨‍💼 팀장
 
-### 장진혁 [![GitHub](https://img.shields.io/badge/GitHub-jinhyuk2me-black?logo=github)](https://github.com/jinhyuk2me)
-
+### **장진혁** [![GitHub](https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jinhyuk2me)
 - 프로젝트 기획 및 총괄
 - 데이터베이스 설계, 구축 및 관리
 - 실시간 대여량 예측 시스템 설계 및 구현  
@@ -521,7 +520,7 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 ### 👥 팀원
 
-### 김대인 [![GitHub](https://img.shields.io/badge/GitHub-Daeinism-black?logo=github)](https://github.com/Daeinism)
+### **김대인** [![GitHub](https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Daeinism)
 - 날씨 관련 데이터 수집, 전처리, 분석, 시각화
 - 데이터베이스 시각화, 보완 및 관리
 - 시스템/기능 백엔드 개발  
@@ -531,13 +530,12 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
   - 날씨/고도 API  
   - 학습 데이터셋 구성
 
-### 김민수 [![GitHub](https://img.shields.io/badge/GitHub-kimminsu0519-black?logo=github)](https://github.com/kimminsu0519)
+### **김민수** [![GitHub](https://img.shields.io/badge/github-kimminsu0519-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kimminsu0519)
 - 위치 기반 대중교통 접근성 분석 지표 설계 및 구현
 - 지하철/버스/따릉이 이용량 데이터 병합 및 시간대별 상관관계 분석
 - 프로젝트 문서 통일 및 코드 정리, GitHub 배포 전 사전 점검
 
-### 김범진 [![GitHub](https://img.shields.io/badge/GitHub-jbjj0708-black?logo=github)](https://github.com/jbjj0708)
+### **김범진** [![GitHub](https://img.shields.io/badge/github-jbjj0708-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jbjj0708)
 - 다양한 분석 가설 수립
 - 공공데이터 수집 및 전처리
 - 데이터 분석 및 시각화
-
