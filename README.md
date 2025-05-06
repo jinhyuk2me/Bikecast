@@ -1,6 +1,90 @@
 ![배너](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/banner.png?raw=true)
 
 
+
+<h3>👨‍💼 팀장</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>GitHub</th>
+      <th>역할</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>장진혁</strong></td>
+      <td>
+        <a href="https://github.com/jinhyuk2me">
+          <img src="https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        프로젝트 기획 및 총괄<br>
+        DB 설계, 구축, 관리<br>
+        실시간 수요 예측 시스템 개발 (SR_01)<br>
+        설치 위치 추천 시스템 개발 (SR_02)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>👥 팀원</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>GitHub</th>
+      <th>역할</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>김대인</strong></td>
+      <td>
+        <a href="https://github.com/Daeinism">
+          <img src="https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        날씨 데이터 수집·분석·시각화<br>
+        DB 시각화, 관리 보완<br>
+        백엔드 기능 개발: SQL, 고도/거리 계산, API 연동
+      </td>
+    </tr>
+    <tr>
+      <td><strong>김민수</strong></td>
+      <td>
+        <a href="https://github.com/kimminsu0519">
+          <img src="https://img.shields.io/badge/github-kimminsu0519-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        대중교통 접근성 지표 설계<br>
+        교통 이용량 분석 및 상관관계 검증<br>
+        문서 통일, 코드 정리, 배포 전 검토
+      </td>
+    </tr>
+    <tr>
+      <td><strong>김범진</strong></td>
+      <td>
+        <a href="https://github.com/jbjj0708">
+          <img src="https://img.shields.io/badge/github-jbjj0708-181717?style=flat-square&logo=github&logoColor=white">
+        </a>
+      </td>
+      <td>
+        분석 가설 수립<br>
+        공공데이터 수집 및 정제<br>
+        데이터 분석 및 시각화
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 ## 📚 목차
 
 1. [프로젝트 개요](#1-프로젝트-개요)  
@@ -13,7 +97,6 @@
 8. [모델 설명 및 성능 평가](#8-모델-설명-및-성능-평가)  
 9. [한계점](#9-한계점)  
 10. [디렉토리 구조](#10-디렉토리-구조)  
-11. [팀 소개](#11-팀-소개)
 
 
 # 🚲 서울시 공공자전거 수요 예측 및 분석
@@ -494,89 +577,3 @@ EDA와 XGBoost는 **상호 보완적인 관계**에 있습니다. EDA를 통해 
 
 
 ```📌 전체 프로젝트는 데이터 수집 → 탐색적 분석 → 기능 구현 및 학습의 흐름으로 구성되어 있으며, 기능별 유지보수와 역할 분리가 용이하도록 설계되어 있습니다.```
-
----
-
-## 11. 팀 소개
-
-<h3>👨‍💼 팀장</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>이름</th>
-      <th>GitHub</th>
-      <th>역할</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>장진혁</strong></td>
-      <td>
-        <a href="https://github.com/jinhyuk2me">
-          <img src="https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white">
-        </a>
-      </td>
-      <td>
-        프로젝트 기획 및 총괄<br>
-        DB 설계, 구축, 관리<br>
-        실시간 수요 예측 시스템 개발 (SR_01)<br>
-        설치 위치 추천 시스템 개발 (SR_02)
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>👥 팀원</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>이름</th>
-      <th>GitHub</th>
-      <th>역할</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>김대인</strong></td>
-      <td>
-        <a href="https://github.com/Daeinism">
-          <img src="https://img.shields.io/badge/github-Daeinism-181717?style=flat-square&logo=github&logoColor=white">
-        </a>
-      </td>
-      <td>
-        날씨 데이터 수집·분석·시각화<br>
-        DB 시각화, 관리 보완<br>
-        백엔드 기능 개발: SQL, 고도/거리 계산, API 연동
-      </td>
-    </tr>
-    <tr>
-      <td><strong>김민수</strong></td>
-      <td>
-        <a href="https://github.com/kimminsu0519">
-          <img src="https://img.shields.io/badge/github-kimminsu0519-181717?style=flat-square&logo=github&logoColor=white">
-        </a>
-      </td>
-      <td>
-        대중교통 접근성 지표 설계<br>
-        교통 이용량 분석 및 상관관계 검증<br>
-        문서 통일, 코드 정리, 배포 전 검토
-      </td>
-    </tr>
-    <tr>
-      <td><strong>김범진</strong></td>
-      <td>
-        <a href="https://github.com/jbjj0708">
-          <img src="https://img.shields.io/badge/github-jbjj0708-181717?style=flat-square&logo=github&logoColor=white">
-        </a>
-      </td>
-      <td>
-        분석 가설 수립<br>
-        공공데이터 수집 및 정제<br>
-        데이터 분석 및 시각화
-      </td>
-    </tr>
-  </tbody>
-</table>
-
