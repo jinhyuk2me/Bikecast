@@ -1,5 +1,7 @@
 ![Banner](https://github.com/addinedu-ros-9th/eda-repo-1/blob/main/img/banner.png?raw=true)
 
+## 1. Team
+
 <h3>👨‍💼 Team Lead</h3>
 
 <table>
@@ -85,22 +87,23 @@
 
 ## 📚 Table of Contents
 
-1. [Project Overview](#1-project-overview)  
-2. [Tech Stack](#2-tech-stack)  
-3. [Why This Project Matters](#3-why-this-project-matters)  
-4. [Requirements (UR / SR)](#4-requirements)  
-5. [Database Architecture & Sources](#5-database-architecture--sources)  
-6. [EDA (Exploratory Data Analysis)](#6-eda-exploratory-data-analysis)  
-7. [Feature Walkthrough](#7-feature-walkthrough)  
-8. [Models & Performance](#8-models--performance)  
-9. [Limitations](#9-limitations)  
-10. [Directory Structure](#10-directory-structure)  
+1. [Team](#1-team)  
+2. [Project Overview](#2-project-overview)  
+3. [Tech Stack](#3-tech-stack)  
+4. [Why This Project Matters](#4-why-this-project-matters)  
+5. [Requirements (UR / SR)](#5-requirements)  
+6. [Database Architecture & Sources](#6-database-architecture--sources)  
+7. [EDA (Exploratory Data Analysis)](#7-eda-exploratory-data-analysis)  
+8. [Feature Walkthrough](#8-feature-walkthrough)  
+9. [Models & Performance](#9-models--performance)  
+10. [Limitations](#10-limitations)  
+11. [Directory Structure](#11-directory-structure)  
 
 > 📄 Korean version: [`README.ko.md`](README.ko.md)
 
 # 🚲 Bikecast: Demand Forecasting & Site Analytics for Seoul Bike
 
-## 1. Project Overview
+## 2. Project Overview
 
 Bikecast is a data-analytics project that leverages **exploratory data analysis (EDA)** to implement two core capabilities for Seoul’s public bike service (Ddareungi): **usage demand forecasting** and **new station site recommendations**.
 
@@ -122,7 +125,7 @@ Current operations mostly rely on **after-the-fact redistribution** once thresho
 
 ---
 
-## 2. Tech Stack
+## 3. Tech Stack
 
 | Category | Technologies | Badges |
 |----------|-------------|--------|
@@ -138,7 +141,7 @@ Current operations mostly rely on **after-the-fact redistribution** once thresho
 
 ---
 
-## 3. Why This Project Matters
+## 4. Why This Project Matters
 
 ```🕒🚲 Put bikes where and when they are needed```
 
@@ -153,7 +156,7 @@ To eliminate inefficiencies in Seoul Bike operations we need **data-driven deman
 
 ---
 
-## 4. Requirements
+## 5. Requirements
 
 User requirements (UR) were translated into the two core system requirements (SR) that drive development.
 
@@ -169,7 +172,7 @@ User requirements (UR) were translated into the two core system requirements (SR
 
 ---
 
-## 5. Database Architecture & Sources
+## 6. Database Architecture & Sources
 
 We gathered and unified multi-source data to capture spatio-temporal factors that influence demand. Every dataset feeds directly into EDA, feature engineering, hypothesis testing, and model inputs.
 
@@ -203,7 +206,7 @@ For training, we rely on a dedicated learning table inside MySQL. It uses **[ren
 
 ---
 
-## 6. EDA (Exploratory Data Analysis)
+## 7. EDA (Exploratory Data Analysis)
 
 ### 6.1 Method & Feature Selection
 
@@ -377,7 +380,7 @@ EDA and XGBoost reinforce each other: hypotheses produce candidate features; XGB
 
 ---
 
-## 7. Feature Walkthrough
+## 8. Feature Walkthrough
 
 ### 🚴‍♀️ SR_01 — Station-level, time-based demand forecasts
 
@@ -401,7 +404,7 @@ EDA and XGBoost reinforce each other: hypotheses produce candidate features; XGB
 
 ---
 
-## 8. Models & Performance
+## 9. Models & Performance
 
 Bikecast focuses on **time-based demand forecasting (SR_01)** and **location-based site recommendations (SR_02)**. Both use XGBoost regressors, and we evaluated them with RMSE, MAE, (S)MAPE, and R².
 
@@ -454,7 +457,7 @@ This feature estimates relative demand for potential new stations.
 
 ---
 
-## 9. Limitations
+## 10. Limitations
 
 ### 9-1. Structural challenges when forecasting high-demand stations
 
@@ -480,7 +483,7 @@ This feature estimates relative demand for potential new stations.
 
 ---
 
-## 10. Directory Structure
+## 11. Directory Structure
 
 The repository is split into three top-level directories aligned with the data lifecycle: collection → analysis → service implementation.
 
