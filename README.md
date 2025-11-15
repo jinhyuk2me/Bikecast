@@ -14,7 +14,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><strong>Jinhyeok Jang</strong></td>
+      <td><strong>Jinhyuk Jang</strong></td>
       <td>
         <a href="https://github.com/jinhyuk2me">
           <img src="https://img.shields.io/badge/github-jinhyuk2me-181717?style=flat-square&logo=github&logoColor=white">
